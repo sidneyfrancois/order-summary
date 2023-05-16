@@ -26,11 +26,22 @@ body {
   font-family: "Red Hat Display", sans-serif;
 }
 
+.card-base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 325px;
+  background-color: var(--neutral-very-pale-blue);
+  border-radius: 20px;
+  overflow: hidden;
+  color: var(--neutral-desaturated-blue);
+}
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
 
   max-width: 350px;
   background-color: var(--neutral-very-pale-blue);
@@ -40,8 +51,9 @@ body {
 }
 
 .card-info {
-  padding: 1rem;
+  padding: 2rem 1.5rem;
   width: 100%;
+  gap: 1.8rem;
 }
 
 @media (min-width: 600px) {
@@ -55,7 +67,7 @@ body {
   }
 
   .card-info {
-    padding: 3rem;
+    padding: 2.5rem;
   }
 }
 
