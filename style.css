@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+
+  --neutral-very-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --neutral-dark-blue: hsl(223, 47%, 23%);
+
+  --font-medium: 500;
+  --font-bold: 700;
+  --font-black: 900;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--primary-pale-blue);
+  font-size: 1rem;
+  font-family: "Red Hat Display";
+}
+
+@media (min-width: 600px) {
+  body {
+    background: url("images/pattern-background-desktop.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  max-width: 350px;
+  background-color: var(--neutral-very-pale-blue);
+  border-radius: 20px;
+  overflow: hidden;
+  color: var(--neutral-desaturated-blue);
+}
+
+.card-info {
+  padding: 1rem;
+  width: 100%;
+}
+
+.card-info h2 {
+  color: var(--neutral-dark-blue);
+}
+
+.card-info p {
+  text-align: center;
+}
+
+.plan-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: inherit;
+  background-color: hsl(224, 23%, 55%, 0.05);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.plan-info a {
+  color: hsl(245, 75%, 52%, 0.9);
+  font-weight: var(--font-bold);
+}
+
+.plan-price {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.plan-price span {
+  font-weight: var(--font-black);
+  color: var(--neutral-dark-blue);
+  display: block;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  font-weight: var(--font-black);
+  background-color: var(--neutral-very-pale-blue);
+  color: var(--neutral-desaturated-blue);
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  color: var(--neutral-very-pale-blue);
+  background-color: var(--primary-bright-blue);
+  box-shadow: 0px 8px 25px hsl(245, 75%, 52%, 0.3);
+}
+
+.procced-payment {
+}
+
+.cancel-order {
+}
